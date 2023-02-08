@@ -26,10 +26,36 @@ div.sec {
 
 a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: small;
-    padding: 10px;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+h1:hover {
+    background-color: rgb(84, 116, 116);
+    color : white;
+    font-style : bold;
 }
 
 body {
     background-color: #EDE4E0;
+}
+
+h2 {
+    size : smaller;
+}
+
+span {
+    padding: 5px;
+}
+
+span:hover {
+    background-color: black;
+    border-radius: 5px;
+    color : white;
+    padding : 5px;
 }
