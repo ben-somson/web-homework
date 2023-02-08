@@ -29,6 +29,7 @@ a {
     font-size: large;
     text-decoration: none;
     color: black;
+    padding:5px
 }
 
 a:hover {
@@ -49,13 +50,16 @@ h2 {
     size : smaller;
 }
 
-span {
-    padding: 5px;
-}
 
-span:hover {
+
+span.link:hover {
     background-color: black;
     border-radius: 5px;
     color : white;
     padding : 5px;
+}
+
+img {
+    border-radius: 10px;
+    padding: 5px;
 }
