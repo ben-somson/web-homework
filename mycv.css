@@ -9,6 +9,7 @@ h1 {
   }
 
 div#head {
+    grid-area: head;
     color :rgb(255, 255, 255);
     font-size: larger;
     font-family: 'Montserrat';
@@ -22,6 +23,8 @@ div#head {
 div.sec {
     font-family:'Montserrat';
     font-size: small;
+    margin:5px;
+    flex: 1 1 auto
 }
 
 div.sec:hover > h1 {
@@ -61,7 +64,6 @@ span.link:hover {
     background-color: black;
     border-radius: 5px;
     color : white;
-    padding : 5px;
 }
 
 img {
@@ -72,4 +74,55 @@ img {
 #pres {
     font-family:'Montserrat';
     font-size: large;
+}
+
+.container {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ 
+}
+
+.headercv {
+    position: sticky;
+    top: 7px;
+    display: grid;
+    grid-template-columns:
+    1fr ;
+    grid-template-areas:
+    "head"
+    "desc"
+    "links";
+    background-color: #EDE4E0;
+}
+
+#links {
+    grid-area: links;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#desc {
+    grid-area: desc;
+    display: flex;
+}
+
+#phy {
+    color:rgb(0, 11, 82)
+}
+#maths {
+    color:rgb(179, 0, 15)
+}
+#comp {
+    color:rgb(92, 92, 92)
+}
+
+.poem {
+    background-color: aliceblue;
+    font-style: italic;
+    padding : 7px;
+    border-width:3px;
+    border-style:inset;
 }
