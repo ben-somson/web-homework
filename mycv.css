@@ -18,6 +18,7 @@ div#head {
     text-align: center;
     background-color: rgb(84, 116, 116);
     padding: 5px;
+    flex:1 1 auto
 }
 
 div.sec {
@@ -87,13 +88,9 @@ img {
 .headercv {
     position: sticky;
     top: 7px;
-    display: grid;
-    grid-template-columns:
-    1fr ;
-    grid-template-areas:
-    "head"
-    "desc"
-    "links";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #EDE4E0;
 }
 
@@ -102,11 +99,13 @@ img {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex:1 1 auto
 }
 
 #desc {
     grid-area: desc;
     display: flex;
+    flex:1 1 auto
 }
 
 #phy {
