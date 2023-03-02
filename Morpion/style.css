@@ -1,0 +1,32 @@
+code {
+    font-weight: bold;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #grid {
+    margin: 10px 0 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  #grid > div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-color : black ;
+    background-color: lightgray;
+  }
+
+  #grid > div.playerone {
+    background-color: lightseagreen;
+  }
+
+  #grid > div.playertwo {
+    background-color: lightskyblue;
+}
